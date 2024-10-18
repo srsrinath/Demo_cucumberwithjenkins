@@ -30,7 +30,7 @@ pipeline {
                     echo "Credentials file path: src/test/resources/credentials.properties.txt"
 
                     // Use a relative path for the credentials file
-                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath='C:\\Users\\Admin\\Desktop\\credentials.properties.txt' -DthreadCount=10'
+                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath="C:\\Users\\Admin\\Desktop\\credentials.properties.txt" -DthreadCount=10'
                 }
             }
         }
