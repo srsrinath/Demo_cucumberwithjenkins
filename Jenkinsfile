@@ -32,6 +32,7 @@ pipeline {
                     echo "Credentials file path: ${credsFilePath}"
 
                     bat "mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags='@test' -DcredsFilePath=\"${credsFilePath}\" -DthreadCount=10"
+                    bat "mvn clean test -X -DcredsFilePath=${credsFilePath}"
                 }
             }
         }
