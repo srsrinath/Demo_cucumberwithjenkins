@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.616 s <<< FAILURE! - in TestSuite
+runner.TestRunner.runScenario["Verify if user is able to login with valid credentials", "Optional[Checking the  Login functionality]"](1)  Time elapsed: 12.888 s  <<< FAILURE!
+java.lang.RuntimeException: Property code is not specified in the creds file
+

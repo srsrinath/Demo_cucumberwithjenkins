@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-18T21:34:39 IST" name="Surefire suite" finished-at="2024-10-18T21:34:54 IST" duration-ms="15135">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-18T21:34:39 IST" name="Surefire test" finished-at="2024-10-18T21:34:54 IST" duration-ms="15135">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-10-18T21:34:39 IST" name="setUpClass" finished-at="2024-10-18T21:34:40 IST" duration-ms="727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22bf4d9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setupBeforeClass()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-10-18T21:34:40 IST" name="setupBeforeClass" finished-at="2024-10-18T21:34:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-10-18T21:34:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-18T21:34:53 IST" duration-ms="12857" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify if user is able to login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Checking the  Login functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Property code is not specified in the creds file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Property code is not specified in the creds file
+at utilities.CredsLoader.getProperty(CredsLoader.java:18)
+at scenarios.stepDefinitions.Login.LoginStepDef.logInToDMS(LoginStepDef.java:38)
+at ✽.Log In to DMS(file:///C:/Users/Admin/Downloads/KooversWeb-master/src/test/java/scenarios/features/Login/Login.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2024-10-18T21:34:53 IST" name="tearDownClass" finished-at="2024-10-18T21:34:54 IST" duration-ms="1504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
