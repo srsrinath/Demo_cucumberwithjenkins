@@ -6,7 +6,11 @@ public class CredsLoader {
     private final Properties properties;
 
     public CredsLoader() {
-        properties = PropertyUtils.propertyLoader(System.getProperty("credsFilePath"));
+        //properties = PropertyUtils.propertyLoader(System.getProperty("credsFilePath"));
+        properties = PropertyUtils.propertyLoader(System.getProperty("someKey"));
+if (properties == null) {
+    System.err.println("Key 'someKey' not found in properties file");
+}
 
     }
 
