@@ -20,10 +20,10 @@ pipeline {
                 script {
                     echo "Running Cucumber tests with the following parameters:"
                     echo "Environment: ${env}"
-                    echo "Credentials file path: ${credsFilePath}"
+                    echo "Credentials file path: src/test/resources/credentials.properties.txt"
 
-                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath=C:/Users/Admin/Desktop/credentials.properties.txt -DthreadCount=10'
-    
+                    // Use a relative path for the credentials file
+                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath="./src/test/resources/credentials.properties.txt" -DthreadCount=10'
                 }
             }
         }
