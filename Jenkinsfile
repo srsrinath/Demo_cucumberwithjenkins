@@ -22,7 +22,7 @@ pipeline {
                     echo "Environment: ${env}"
                     echo "Credentials file path: ${credsFilePath}"
 
-                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath="C:\Users\Admin\Desktop\credentials.properties.txt" -DthreadCount=10'
+                    bat 'mvn clean test -Denv=dev -DbrowserMode=headless -Dcucumber.filter.tags="@test" -DcredsFilePath="C:/Users/Admin/Desktop/credentials.properties.txt" -DthreadCount=10'
     
                 }
             }
