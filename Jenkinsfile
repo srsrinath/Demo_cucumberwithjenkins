@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        credsFilePath = "C:\Users\Admin\Desktop\credentials.properties.txt" // Ensure this path is accessible from Jenkins
+        credsFilePath = "C:/Users/Admin/Desktop/credentials.properties.txt" // Ensure this path is accessible from Jenkins
     }
     stages {
         stage('Clone Repository') {
