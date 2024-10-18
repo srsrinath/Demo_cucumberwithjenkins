@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-        credsFilePath = "C:/Users/srinath/Desktop/Credentials.properties.txt" // Ensure this path is accessible from Jenkins
+        credsFilePath = "C:\Users\Admin\Desktop\credentials.properties.txt" // Ensure this path is accessible from Jenkins
     }
     stages {
         stage('Clone Repository') {
             steps {
                 script {
                     // Clone the GitHub repository using the configured credentials
-                    git url: 'https://github.com/srsrinath/KooversWeb.git',
+                    git url: 'https://github.com/srsrinath/Demo_cucumberwithjenkins.git',
                         branch: 'master',
                         credentialsId: '83163479' // Use the ID of your GitHub credentials
                 }
